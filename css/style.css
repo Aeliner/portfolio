@@ -1,0 +1,163 @@
+body,h1,h2,h3,html {
+    margin: 0;
+  }
+
+  @font-face {
+    font-family: 'playfair_displayregular';
+    src: url('fonts/playfairdisplay-variablefont_wght-webfont.woff2') format('woff2'),
+         url('fonts/playfairdisplay-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+  section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ccc;
+    position: relative;
+  }
+  main {
+    height: 100vh;
+    overflow: hidden;
+  }
+  section:nth-child(2) {
+    background: blueviolet;
+  }
+  section:nth-child(3) {
+    background: yellowgreen;
+  }
+
+
+  nav{
+    width:100%;
+    position:fixed;
+    margin: 0 auto;
+    z-index:2;
+    display:flex;
+    align-items:center;
+    text-align:center;
+    z-index:2;
+  }
+
+  nav:before{
+    filter:blur(2px);
+    content:"";
+    z-index:0;
+    background:rgba(0,0,0,0.2);
+    width:100%;
+    height:100%;
+    position:absolute;
+  }
+
+  navblur{
+    width:100%;
+    position:fixed;
+    filter:blur(20px);
+    height:100%;
+  }
+
+  .name{
+    flex-basis:20%;
+    color:#fff;
+    font-size:28px;
+  }
+
+  .nav-links{
+    flex:1;
+    text-align:right;
+  }
+
+  .nav-links ul li{
+    list-style:none;
+    display:inline-block;
+    margin: 0 20px;
+    font-size:20px;
+  }
+
+  .nav-links ul li a{
+    color: #fff;
+    text-decoration:none;
+  }
+
+  .delay-05 {
+    animation-delay: 0s;
+  }
+
+  .delay-1 {
+    animation-delay: 0.25s;
+  }
+
+  .delay-15 {
+    animation-delay: 0.5s;
+  }
+
+  .delay-2 {
+    animation-delay: 0.75s;
+  }
+
+  .delay-25 {
+    animation-delay: 1s;
+  }
+
+  .delay-3 {
+    animation-delay: 1.25s;
+  }
+
+  .home{
+    height:100%;
+    width:100%;
+    background-image:url("../images/homebackground.jpg");
+    color:#fff; 
+    text-align:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+
+  .home .content{
+    text-align:center;
+  }
+  .content{
+    font-family: playfair_displayregular;
+  }
+  .content h1{
+    font-size:120px;
+  }
+
+  .content h3{
+    font-size:60px;
+  }
+
+  links{
+    display:flex;
+    justify-content:center;
+  }
+
+  links div{
+    height:48px;
+    width:48px;
+    margin:5px;
+    background-size:cover;
+    filter:invert(1);
+  }
+
+  links .linkedin{
+    background-image:url(../images/iconmonstr-linkedin-3.svg);
+  }
+
+  links .github{
+    background-image:url(../images/mark-github.svg);
+  }
+
+  links .resume{
+    background-image:url(../images/curriculum-resume-svgrepo-com.svg);
+  }
+
+  links > div:hover{
+    filter:invert(0);
+    cursor:pointer;
+  }
+
+
+

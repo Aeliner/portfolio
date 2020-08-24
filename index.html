@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="css/animate.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <nav>
+    <div class="name">
+      Nazareno Alvarez
+    </div>
+    <div class="nav-links">
+      <ul id="#navs">
+        <li id="li1" class="animate__animated animate__fadeInLeft delay-3"><a href="">Home</a></li>
+        <li class="animate__animated animate__fadeInLeft delay-25"><a href="">About</a></li>
+        <li class="animate__animated animate__fadeInLeft delay-2"><a href="">Experience</a></li>
+        <li class="animate__animated animate__fadeInLeft delay-15"><a href="">Projects</a></li>
+        <li class="animate__animated animate__fadeInLeft delay-1"><a href="">Contact</a></li>
+        <li class="animate__animated animate__fadeInLeft delay-05"><a href="">Resume</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div id="container">
+    <section data-anchor="Page 1">
+      <div class="home">
+        <div class="content">
+          <h1 class="animate__animated animate__fadeInDown animate__delay-2s">Nazareno Alvarez</h1>
+          <h3 class="animate__animated animate__fadeInUp animate__delay-3s">FullStack Developer</h3>
+          <links>
+            <div class="animate__animated animate__fadeIn animate__delay-4s linkedin"></div>
+            <div class="animate__animated animate__fadeIn animate__delay-4s github"></div>
+            <div class="animate__animated animate__fadeIn animate__delay-4s resume"></div>
+          </links>
+        </div>
+      </div>
+    </section>
+    <section data-anchor="Page 2">
+      <div class="about"></div>
+    </section>
+    <section data-anchor="Page 3">
+      <div class="experience"></div>
+    </section>
+    <section data-anchor="Page 4">
+      <div class="projects"></div>
+    </section>
+    <section data-anchor="Page 4">
+      <div class="projects"></div>
+    </section>
+    <section data-anchor="Page 5">
+      <div class="contact"></div>
+    </section>
+  </div>
+  <script src="js/script.js"></script>
+  <script src="js/pageable.js"></script>
+  <script>
+    new Pageable("#container", {
+      pips: false,
+      animation: 800,
+      swipeThreshold: 50,
+      infinite: true,
+    });
+    window.scrollTo(0, 0);
+  </script>
+</body>
+
+</html>
