@@ -1,71 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="css/animate.min.css" />
-  <link rel="stylesheet" href="css/style.css" />
-</head>
-
-<body>
-  <nav>
-    <div class="name">
-      Nazareno Alvarez
-    </div>
-    <div class="nav-links">
-      <ul id="#navs">
-        <li id="li1" class="animate__animated animate__fadeInLeft delay-3"><a href="">Home</a></li>
-        <li class="animate__animated animate__fadeInLeft delay-25"><a href="">About</a></li>
-        <li class="animate__animated animate__fadeInLeft delay-2"><a href="">Experience</a></li>
-        <li class="animate__animated animate__fadeInLeft delay-15"><a href="">Projects</a></li>
-        <li class="animate__animated animate__fadeInLeft delay-1"><a href="">Contact</a></li>
-        <li class="animate__animated animate__fadeInLeft delay-05"><a href="">Resume</a></li>
-      </ul>
-    </div>
-  </nav>
-  <div id="container">
-    <section data-anchor="Page 1">
-      <div class="home">
-        <div class="content">
-          <h1 class="animate__animated animate__fadeInDown animate__delay-2s">Nazareno Alvarez</h1>
-          <h3 class="animate__animated animate__fadeInUp animate__delay-3s">FullStack Developer</h3>
-          <links>
-            <a href="https://www.linkedin.com/in/nazareno1907/" target="_blank" class="animate__animated animate__fadeIn linkedin"></a>
-            <a href="https://github.com/Aeliner" target="_blank" class="animate__animated animate__fadeIn github"></a>
-            <a href="resume/Resume English.pdf" target="_blank" class="animate__animated animate__fadeIn resume" download></a>
-          </links>
-        </div>
+  <body>
+    <nav>
+      <div class="name">
+        Nazareno Alvarez
       </div>
-    </section>
-    <section data-anchor="Page 2">
-      <div class="about"></div>
-    </section>
-    <section data-anchor="Page 3">
-      <div class="experience"></div>
-    </section>
-    <section data-anchor="Page 4">
-      <div class="projects"></div>
-    </section>
-    <section data-anchor="Page 4">
-      <div class="projects"></div>
-    </section>
-    <section data-anchor="Page 5">
-      <div class="contact"></div>
-    </section>
-  </div>
-  <script src="js/script.js"></script>
-  <script src="js/pageable.js"></script>
-  <script>
-    new Pageable("#container", {
-      pips: false,
-      animation: 800,
-      swipeThreshold: 50,
-      infinite: true,
-    });
-    window.scrollTo(0, 0);
-  </script>
-</body>
-
+      <div class="nav-links">
+        <ul id="#navs">
+          <li id="li1" class="animate__animated animate__fadeInLeft delay-3">
+            <a href="#page-1">Home</a>
+          </li>
+          <li class="animate__animated animate__fadeInLeft delay-2">
+            <a href="#page-2">About</a>
+          </li>
+          <li class="animate__animated animate__fadeInLeft delay-15">
+            <a href="#page-3">Projects</a>
+          </li>
+          <li class="animate__animated animate__fadeInLeft delay-1">
+            <a href="#page-4">Contact</a>
+          </li>
+          <li class="animate__animated animate__fadeInLeft delay-05">
+            <a href="resume/Resume English.pdf" download>Resume</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div id="container">
+      <section data-anchor="Page 1">
+        <div class="home">
+          <div class="content">
+            <h1 class="animate__animated animate__fadeInDown animate__delay-2s">
+              Nazareno Alvarez
+            </h1>
+            <h3 class="animate__animated animate__fadeInUp">
+              FullStack Developer
+            </h3>
+            <links>
+              <a
+                href="https://www.linkedin.com/in/nazareno1907/"
+                target="_blank"
+                class="animate__animated animate__fadeIn linkedin"
+              ></a>
+              <a
+                href="https://github.com/Aeliner"
+                target="_blank"
+                class="animate__animated animate__fadeIn github"
+              ></a>
+              <a
+                href="resume/Resume English.pdf"
+                target="_blank"
+                class="animate__animated animate__fadeIn resume"
+                download
+              ></a>
+            </links>
+          </div>
+        </div>
+      </section>
+      <section data-anchor="Page 2">
+        <div class="about">
+          <div class="content" id="aboutContent">
+            <h3 id="h3About">Hello, my name is Nazareno Alvarez.</h3>
+            <p id="p1About">
+              I am a FullStack Web Developer, with great passion for facing and
+              overcoming difficult challenges.
+            </p>
+            <p id="p2About">
+              I consider myself really proactive, I enjoy learning new
+              technologies by my own, I always find it fun to get out of my
+              comfort zone.
+            </p>
+            <p id="p3About">
+              In my free time, I enjoy cooking, riding my bike and playing
+              videogames.
+            </p>
+            <h3 id="h3About2">
+              I'm always trying to improve my skillset, for now I focus on:
+            </h3>
+            <div class="aboutSkills">
+              <img class="imgSkills" src="images/java.png" alt="" />
+              <img class="imgSkills" src="images/javascript.png" alt="" />
+              <img
+                class="imgSkills"
+                src="images/social_style_3_css3-512.png"
+                alt=""
+              />
+              <img class="imgSkills" src="images/22-512.png" alt="" />
+              <img class="imgSkills" src="images/bootstrap.png" alt="" />
+              <img class="imgSkills" src="images/php.png" alt="" />
+              <img class="imgSkills" src="images/laravel.png" alt="" />
+              <img class="imgSkills" src="images/vuejs.png" alt="" />
+              <img class="imgSkills" src="images/nodejs.png" alt="" />
+              <img class="imgSkills" src="images/mysql.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section data-anchor="Page 3">
+        <div class="projects">
+          <div class="content" id="projectsContent"></div>
+        </div>
+      </section>
+      <section data-anchor="Page 4">
+        <div class="contact">
+          <div class="content" id="contactContent"></div>
+        </div>
+      </section>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/pageable.js"></script>
+    <script>
+      const page = new Pageable("#container", {
+        pips: false,
+        animation: 800,
+        swipeThreshold: 50,
+      });
+      let alreadyAnimated = [];
+      page.on("scroll.end", (data) => {
+        let index = data.index;
+        if (alreadyAnimated.includes(index) || index == 0) return;
+        else if (index == 1) {
+          let content = document.getElementById("aboutContent");
+          content.style.opacity = "1";
+          let h3 = document.getElementById("h3About");
+          let h3_2 = document.getElementById("h3About2");
+          h3_2.classList.add(
+            "animate__animated",
+            "animate__fadeIn",
+            "animate__delay-2s"
+          );
+          h3.classList.add("animate__animated", "animate__fadeIn");
+          let p1 = document.getElementById("p1About");
+          let p2 = document.getElementById("p2About");
+          let p3 = document.getElementById("p3About");
+          p1.classList.add(
+            "animate__animated",
+            "animate__fadeIn",
+            "animate__delay-1s"
+          );
+          p2.classList.add(
+            "animate__animated",
+            "animate__fadeIn",
+            "animate__delay-1s"
+          );
+          p3.classList.add(
+            "animate__animated",
+            "animate__fadeIn",
+            "animate__delay-1s"
+          );
+          let imgList = document.getElementsByClassName("imgSkills");
+          for(let i = 0; i < imgList.length; i++)
+          {
+            let img = imgList[i];
+            let delay = 2.25 + (0.25*i);
+            img.classList.add("animate__animated", "animate__fadeInUp");
+            img.style.animationDelay = delay+"s";
+          }
+          alreadyAnimated.push(index);
+        } else if (index == 2) {
+          //projects
+        } else {
+          //contact
+        }
+      });
+      window.scrollTo(0, 0);
+    </script>
+  </body>
 </html>

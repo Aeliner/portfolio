@@ -12,20 +12,26 @@ body,h1,h2,h3,html {
   section {
     height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
     background: #ccc;
     position: relative;
+  }
+
+  #page-1{
+    justify-content: center;
+    align-items: center;
+  }
+  #page-2{
+    justify-content: center;
   }
   main {
     height: 100vh;
     overflow: hidden;
   }
   section:nth-child(2) {
-    background: blueviolet;
+    background: #272822
   }
   section:nth-child(3) {
-    background: yellowgreen;
+    background: #272822
   }
 
 
@@ -80,30 +86,71 @@ body,h1,h2,h3,html {
     text-decoration:none;
   }
 
-  .delay-05 {
+  .delay-0 {
     animation-delay: 0s;
+  }
+  .delay-025 {
+    animation-delay: .25s;
+  }
+  .delay-05 {
+    animation-delay: .5s;
+  }
+  .delay-075 {
+    animation-delay: .75s;
   }
 
   .delay-1 {
-    animation-delay: 0.25s;
-  }
-
-  .delay-15 {
-    animation-delay: 0.5s;
-  }
-
-  .delay-2 {
-    animation-delay: 0.75s;
-  }
-
-  .delay-25 {
     animation-delay: 1s;
   }
 
-  .delay-3 {
+  .delay-125 {
     animation-delay: 1.25s;
   }
-
+  .delay-15 {
+    animation-delay: 1.5s;
+  }
+  .delay-175 {
+    animation-delay: 1.75s;
+  }
+  .delay-2 {
+    animation-delay: 2s;
+  }
+  .delay-225 {
+    animation-delay: 2.25s;
+  }
+  .delay-250 {
+    animation-delay: 2.5s;
+  }
+  .delay-275 {
+    animation-delay: 2.75s;
+  }
+  .delay-3 {
+    animation-delay: 3s;
+  }
+  .delay-325 {
+    animation-delay: 3.25s;
+  }
+  .delay-350 {
+    animation-delay: 3.5s;
+  }
+  .delay-375 {
+    animation-delay: 3.75s;
+  }
+  .delay-4 {
+    animation-delay: 4s;
+  }
+  .delay-425 {
+    animation-delay: 4.25s;
+  }
+  .delay-450 {
+    animation-delay: 4.5s;
+  }
+  .delay-475 {
+    animation-delay: 4.75s;
+  }
+  .delay-5 {
+    animation-delay: 5s;
+  }
   .home{
     height:100%;
     width:100%;
@@ -120,13 +167,19 @@ body,h1,h2,h3,html {
   }
   .content{
     font-family: playfair_displayregular;
+    color:#fff;
   }
   .content h1{
     font-size:120px;
+    
   }
 
   .content h3{
     font-size:60px;
+  }
+
+  #page-1 .content h3{
+    animation-delay:2.5s;
   }
 
   links{
@@ -168,6 +221,35 @@ links > a:nth-child(2){
 links > a:nth-child(3){
   animation-delay:4s;
 }
+
+#aboutContent{
+  margin-top:3rem;
+  text-align:center;
+  opacity:0;
+}
+
+#aboutContent p{
+  font-size:20px;
+}
+
+.aboutSkills{
+  display:flex;
+  flex-wrap:wrap;
+  width:80%;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.aboutSkills img{
+  height:256px;
+  width:256px;
+  margin:10px;
+}
+
+
+
+
+
 
 
 
