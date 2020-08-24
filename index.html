@@ -36,28 +36,28 @@
     <div id="container">
       <section data-anchor="Page 1">
         <div class="home">
-          <div class="content">
-            <h1 class="animate__animated animate__fadeInDown animate__delay-2s">
+          <div id="homeContent" class="content">
+            <h1 id="h1home">
               Nazareno Alvarez
             </h1>
-            <h3 class="animate__animated animate__fadeInUp">
+            <h3 id="h3home" >
               FullStack Developer
             </h3>
             <links>
-              <a
+              <a id="link1home"
                 href="https://www.linkedin.com/in/nazareno1907/"
                 target="_blank"
-                class="animate__animated animate__fadeIn linkedin"
+                class=""
               ></a>
-              <a
+              <a id="link2home"
                 href="https://github.com/Aeliner"
                 target="_blank"
-                class="animate__animated animate__fadeIn github"
+                class=""
               ></a>
-              <a
+              <a id="link3home"
                 href="resume/Resume English.pdf"
                 target="_blank"
-                class="animate__animated animate__fadeIn resume"
+                class=""
                 download
               ></a>
             </links>
@@ -121,11 +121,40 @@
         pips: false,
         animation: 800,
         swipeThreshold: 50,
+        onInit: function (data) {
+          animate(data);
+        },
       });
-      let alreadyAnimated = [];
+      var alreadyAnimated = [];
       page.on("scroll.end", (data) => {
+        animate(data);
+      });
+      page.on("init", (data) => {
+        console.log(data);
+        animate(data);
+      });
+
+      function animate(data) {
         let index = data.index;
-        if (alreadyAnimated.includes(index) || index == 0) return;
+        if (alreadyAnimated) {
+          if (alreadyAnimated.includes(index)) return;
+          else alreadyAnimated.push(index);
+        }
+        if(index == 0)
+        {
+          let content = document.getElementById("homeContent");
+          content.style.opacity = "1";
+          let h1home = document.getElementById("h1home");
+          let h3home = document.getElementById("h3home");
+          let github = document.getElementById("link2home");
+          let linkedin = document.getElementById("link1home");
+          let resume = document.getElementById("link3home");
+          h1home.classList.add("animate__animated", "animate__fadeInDown", "animate__delay-1s");
+          h3home.classList.add("animate__animated", "animate__fadeInUp");
+          github.classList.add("animate__animated", "animate__fadeIn", "github");
+          linkedin.classList.add("animate__animated", "animate__fadeIn", "linkedin");
+          resume.classList.add("animate__animated", "animate__fadeIn", "resume");
+        }
         else if (index == 1) {
           let content = document.getElementById("aboutContent");
           content.style.opacity = "1";
@@ -156,20 +185,18 @@
             "animate__delay-1s"
           );
           let imgList = document.getElementsByClassName("imgSkills");
-          for(let i = 0; i < imgList.length; i++)
-          {
+          for (let i = 0; i < imgList.length; i++) {
             let img = imgList[i];
-            let delay = 2.25 + (0.25*i);
+            let delay = 2.25 + 0.25 * i;
             img.classList.add("animate__animated", "animate__fadeInUp");
-            img.style.animationDelay = delay+"s";
+            img.style.animationDelay = delay + "s";
           }
-          alreadyAnimated.push(index);
         } else if (index == 2) {
           //projects
         } else {
           //contact
         }
-      });
+      }
       window.scrollTo(0, 0);
     </script>
   </body>

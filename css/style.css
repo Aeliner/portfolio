@@ -151,6 +151,7 @@ body,h1,h2,h3,html {
   .delay-5 {
     animation-delay: 5s;
   }
+
   .home{
     height:100%;
     width:100%;
@@ -163,19 +164,21 @@ body,h1,h2,h3,html {
   }
 
   .home .content{
+    opacity:0;
     text-align:center;
   }
+  
   .content{
     font-family: playfair_displayregular;
     color:#fff;
   }
   .content h1{
-    font-size:120px;
+    font-size:8rem;
     
   }
 
   .content h3{
-    font-size:60px;
+    font-size:4rem;
   }
 
   #page-1 .content h3{
