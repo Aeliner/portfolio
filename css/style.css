@@ -241,6 +241,9 @@ links>a:nth-child(3) {
 
 #aboutContent p {
   font-size: 20px;
+  width:70%;
+  margin: 10px auto;
+  line-height:25px;
 }
 
 .aboutSkills {
@@ -255,6 +258,29 @@ links>a:nth-child(3) {
   height: 256px;
   width: 256px;
   margin: 10px;
+}
+
+.projects .content .controls{
+  display:none;
+  display:flex;
+  align-content: center;
+  justify-content: space-between;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+.projects .content .controls > div{
+  background-size:cover;
+  height:30px;
+  width:42px;
+}
+
+.projects .content .controls .leftArrow{
+  background-image:url("../images/arrowL.png");
+}
+
+.projects .content .controls .rightArrow{
+  background-image:url("../images/arrowR.png");
 }
 
 
@@ -287,6 +313,11 @@ links>a:nth-child(3) {
 .header li a:hover,
 .header .menu-btn:hover {
   background-color: rgba(0, 0, 0, 0.9);
+}
+
+#projectsBottomH3{
+  width:80%;
+  margin: 10px auto;
 }
 
 .header .logo {
@@ -535,26 +566,6 @@ letter-spacing: 2px;
     height: 80px;
     width: 80px;
   }
-
-  .projectsList{
-    wrap:
-  }
-  .projectsList .project{
-    width:50%;
-    height:50%;
-    margin:0;
-    margin-bottom:5px;
-  }
-
-  .project .overlay .links > a{
-    width:12px;
-    height:12px;
-  }
-
-  .project .overlay span{
-    font-size:14px;
-  }
-
 }
 
 @media screen and (max-width:360px)
@@ -573,6 +584,10 @@ letter-spacing: 2px;
     margin-top:1em;
   }
 
+  #aboutContent p{
+    width:90%;
+    line-height:20px;
+  }
 }
 
 

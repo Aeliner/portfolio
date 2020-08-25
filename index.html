@@ -6,6 +6,7 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="css/animate.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/slider.css">
   </head>
 
   <body>
@@ -99,20 +100,14 @@
           <div class="content" id="aboutContent">
             <h3 id="h3About">Hello, my name is Nazareno Alvarez.</h3>
             <p id="p1About">
-              I am a FullStack Web Developer, with great passion for facing and
-              overcoming difficult challenges.
+              I'm a FullStack Web Developer who enjoys facing and overcoming new and difficult challenges with great and beautiful code.
             </p>
             <p id="p2About">
-              I consider myself really proactive, I enjoy learning new
-              technologies by my own, I always find it fun to get out of my
-              comfort zone.
-            </p>
-            <p id="p3About">
-              In my free time, I enjoy cooking, riding my bike and playing
-              videogames.
+              I consider myself a proactive person, I like to learn new
+              technologies by my own, I'm always searching for new ways to improve my code and designing skills.
             </p>
             <h3 id="h3About2">
-              I'm always trying to improve my skillset, for now I focus on:
+              I try to increase my skillset everyday, for now I focus on:
             </h3>
             <div class="aboutSkills">
               <img class="imgSkills" src="images/java.png" alt="" />
@@ -137,6 +132,74 @@
         <div class="projects">
           <div class="content" id="projectsContent">
             <h3 id="h3Projects">Take a look at my latest projects:</h3>
+            <div class="controls">
+              <div id="prev" class="leftArrow animate__animated animate__shakeX animate__delay-2s">
+              </div>
+              <div id="next" class="rightArrow animate__animated animate__shakeX animate__delay-2s">
+              </div>
+            </div>
+            <div class="slider-container">
+              <div class="project active">
+                <img src="images/firefox_oVTCvETpXG.png" alt="" />
+                <div class="overlay">
+                  <span class="upperText">PlayStation 5 Showcase</span>
+                  <div class="links">
+                  <a href="https://github.com/Aeliner/ps5dummy" target="_blank" class="projectButtonGitHub"></a>
+                  <a href="https://aeliner.github.io/ps5dummy/" target="_blank" class="projectButtonPage"></a>
+                </div>
+                  <span class="bottomText">A simple HTML5/CSS3/JS website I developed to showcase the new PS5 and most of it's new features.</span>
+                </div>
+              </div>
+              <div class="project">
+                <img src="images/firefox_j8IVaMrFW4.png" alt="" />
+                <div class="overlay">
+                <span class="upperText">Cinema Booking System</span>
+                <div class="links">
+                <a href="https://github.com/Aeliner/cinemabooking" target="_blank" class="projectButtonGitHub"></a>
+                <a href="https://aeliner.github.io/cinemabooking/listado.html" target="_blank" class="projectButtonPage"></a>
+              </div>
+                <span class="bottomText">A simpler visualization of one of the firsts web applications that I developed while I was learning web development for the first time</span>
+              </div>
+              </div>
+              <div class="project">
+                <img src="images/firefox_piQ9QZsYNb.png" alt="" />
+                <div class="overlay">
+                  <span class="upperText">To-Do List</span>
+                  <div class="links">
+                  <a href="https://github.com/Aeliner/to-do" target="_blank" class="projectButtonGitHub"></a>
+                  <a href="https://aeliner.github.io/to-do/" target="_blank" class="projectButtonPage"></a>
+                </div>
+                  <span class="bottomText">My first ever HTML/CSS/JS website, a simple To-Do list which storages your tasks using LocalStorage.</span>
+                </div>
+              </div>
+              <div class="project">
+                <img src="images/wpp.png" alt="" />
+                <div class="overlay">
+                  <span class="upperText">Command-Line Whatsapp Imitation</span>
+                  <div class="links">
+                  <a href="https://github.com/Aeliner/to-do" target="_blank" class="projectButtonGitHub"></a>
+                  <a href="https://aeliner.github.io/to-do/" target="_blank" class="projectButtonPage"></a>
+                </div>
+                  <span class="bottomText">An application that simulates most of whatsapp's main features in the command-line.</span>
+                </div>
+              </div>
+              <div class="project">
+                <img src="images/gym.png" alt="" />
+                <div class="overlay">
+                  <span class="upperText">Command-Line Gym</span>
+                  <div class="links">
+                  <a href="https://github.com/Aeliner/to-do" target="_blank" class="projectButtonGitHub"></a>
+                  <a href="https://aeliner.github.io/to-do/" target="_blank" class="projectButtonPage"></a>
+                </div>
+                  <span class="bottomText">A simple application that simulates a gym's users management system, letting you add users and signing them up for gym classes.</span>
+                </div>
+              </div>
+              
+       </div>
+       <div class="slider-controls">
+        <span id="indicators" class="paginations">
+        </span>
+    </div>
             <div class="projectsList">
               <div class="project">
                 <img src="images/firefox_oVTCvETpXG.png" alt="" />
@@ -194,7 +257,9 @@
                 </div>
               </div>
             </div>
+            <h3 id="projectsBottomH3">If you wanna see more of my open-source projects, feel free to go into my github!</h3>
           </div>
+         
         </div>
       </section>
       <section data-anchor="Page 4">
@@ -205,6 +270,7 @@
     </div>
     <script src="js/script.js"></script>
     <script src="js/pageable.js"></script>
+    <script src="js/slider.js"></script>
     <script>
       const page = new Pageable("#container", {
         pips: false,
@@ -271,18 +337,12 @@
           h3.classList.add("animate__animated", "animate__fadeIn");
           let p1 = document.getElementById("p1About");
           let p2 = document.getElementById("p2About");
-          let p3 = document.getElementById("p3About");
           p1.classList.add(
             "animate__animated",
             "animate__fadeIn",
             "animate__delay-1s"
           );
           p2.classList.add(
-            "animate__animated",
-            "animate__fadeIn",
-            "animate__delay-1s"
-          );
-          p3.classList.add(
             "animate__animated",
             "animate__fadeIn",
             "animate__delay-1s"
