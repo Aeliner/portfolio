@@ -9,6 +9,7 @@
   </head>
 
   <body>
+    <!--
     <nav>
       <div class="name">
         Nazareno Alvarez
@@ -33,6 +34,32 @@
         </ul>
       </div>
     </nav>
+    >-->
+    <header class="header">
+      <div class="logo">Nazareno Alvarez</div>
+      <input class="menu-btn" type="checkbox" id="menu-btn" /><label
+        class="menu-icon"
+        for="menu-btn"
+        ><span class="nav-icon"></span
+      ></label>
+      <ul class="menu" id="#navs">
+        <li class="animate__animated animate__fadeInLeft delay-125">
+          <a href="#page-1">Home</a>
+        </li>
+        <li class="animate__animated animate__fadeInLeft delay-1">
+          <a href="#page-2">About</a>
+        </li>
+        <li class="animate__animated animate__fadeInLeft delay-075">
+          <a href="#page-3">Projects</a>
+        </li>
+        <li class="animate__animated animate__fadeInLeft delay-05">
+          <a href="#page-4">Contact</a>
+        </li>
+        <li class="animate__animated animate__fadeInLeft delay-025">
+          <a href="resume/Resume English.pdf">Resume</a>
+        </li>
+      </ul>
+    </header>
     <div id="container">
       <section data-anchor="Page 1">
         <div class="home">
@@ -40,21 +67,24 @@
             <h1 id="h1home">
               Nazareno Alvarez
             </h1>
-            <h3 id="h3home" >
+            <h3 id="h3home">
               FullStack Developer
             </h3>
             <links>
-              <a id="link1home"
+              <a
+                id="link1home"
                 href="https://www.linkedin.com/in/nazareno1907/"
                 target="_blank"
                 class=""
               ></a>
-              <a id="link2home"
+              <a
+                id="link2home"
                 href="https://github.com/Aeliner"
                 target="_blank"
                 class=""
               ></a>
-              <a id="link3home"
+              <a
+                id="link3home"
                 href="resume/Resume English.pdf"
                 target="_blank"
                 class=""
@@ -105,7 +135,66 @@
       </section>
       <section data-anchor="Page 3">
         <div class="projects">
-          <div class="content" id="projectsContent"></div>
+          <div class="content" id="projectsContent">
+            <h3 id="h3Projects">Take a look at my latest projects:</h3>
+            <div class="projectsList">
+              <div class="project">
+                <img src="images/firefox_oVTCvETpXG.png" alt="" />
+                <div class="overlay">
+                  <span class="upperText">PlayStation 5 Showcase</span>
+                  <div class="links">
+                  <a href="https://github.com/Aeliner/ps5dummy" target="_blank" class="projectButtonGitHub"></a>
+                  <a href="https://aeliner.github.io/ps5dummy/" target="_blank" class="projectButtonPage"></a>
+                </div>
+                  <span class="bottomText">A simple HTML5/CSS3/JS website I developed to showcase the new PS5 and most of it's new features.</span>
+                </div>
+              </div>
+              <div class="project">
+                <img src="images/firefox_j8IVaMrFW4.png" alt="" />
+                <div class="overlay">
+                <span class="upperText">Cinema Booking System</span>
+                <div class="links">
+                <a href="https://github.com/Aeliner/cinemabooking" target="_blank" class="projectButtonGitHub"></a>
+                <a href="https://aeliner.github.io/cinemabooking/listado.html" target="_blank" class="projectButtonPage"></a>
+              </div>
+                <span class="bottomText">A simpler visualization of one of the firsts web applications that I developed while I was learning web development for the first time</span>
+              </div>
+              </div>
+              <div class="project">
+                <img src="images/firefox_piQ9QZsYNb.png" alt="" />
+                <div class="overlay">
+                  <span class="upperText">To-Do List</span>
+                  <div class="links">
+                  <a href="https://github.com/Aeliner/to-do" target="_blank" class="projectButtonGitHub"></a>
+                  <a href="https://aeliner.github.io/to-do/" target="_blank" class="projectButtonPage"></a>
+                </div>
+                  <span class="bottomText">My first ever HTML/CSS/JS website, a simple To-Do list which storages your tasks using LocalStorage.</span>
+                </div>
+              </div>
+              <div class="project">
+                <img src="images/wpp.png" alt="" />
+                <div class="overlay">
+                  <span class="upperText">Command-Line Whatsapp Imitation</span>
+                  <div class="links">
+                  <a href="https://github.com/Aeliner/to-do" target="_blank" class="projectButtonGitHub"></a>
+                  <a href="https://aeliner.github.io/to-do/" target="_blank" class="projectButtonPage"></a>
+                </div>
+                  <span class="bottomText">An application that simulates most of whatsapp's main features in the command-line.</span>
+                </div>
+              </div>
+              <div class="project">
+                <img src="images/gym.png" alt="" />
+                <div class="overlay">
+                  <span class="upperText">Command-Line Gym</span>
+                  <div class="links">
+                  <a href="https://github.com/Aeliner/to-do" target="_blank" class="projectButtonGitHub"></a>
+                  <a href="https://aeliner.github.io/to-do/" target="_blank" class="projectButtonPage"></a>
+                </div>
+                  <span class="bottomText">A simple application that simulates a gym's users management system, letting you add users and signing them up for gym classes.</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <section data-anchor="Page 4">
@@ -140,8 +229,7 @@
           if (alreadyAnimated.includes(index)) return;
           else alreadyAnimated.push(index);
         }
-        if(index == 0)
-        {
+        if (index == 0) {
           let content = document.getElementById("homeContent");
           content.style.opacity = "1";
           let h1home = document.getElementById("h1home");
@@ -149,13 +237,28 @@
           let github = document.getElementById("link2home");
           let linkedin = document.getElementById("link1home");
           let resume = document.getElementById("link3home");
-          h1home.classList.add("animate__animated", "animate__fadeInDown", "animate__delay-1s");
+          h1home.classList.add(
+            "animate__animated",
+            "animate__fadeInDown",
+            "animate__delay-1s"
+          );
           h3home.classList.add("animate__animated", "animate__fadeInUp");
-          github.classList.add("animate__animated", "animate__fadeIn", "github");
-          linkedin.classList.add("animate__animated", "animate__fadeIn", "linkedin");
-          resume.classList.add("animate__animated", "animate__fadeIn", "resume");
-        }
-        else if (index == 1) {
+          github.classList.add(
+            "animate__animated",
+            "animate__fadeIn",
+            "github"
+          );
+          linkedin.classList.add(
+            "animate__animated",
+            "animate__fadeIn",
+            "linkedin"
+          );
+          resume.classList.add(
+            "animate__animated",
+            "animate__fadeIn",
+            "resume"
+          );
+        } else if (index == 1) {
           let content = document.getElementById("aboutContent");
           content.style.opacity = "1";
           let h3 = document.getElementById("h3About");
