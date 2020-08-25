@@ -171,8 +171,8 @@ nav {
 }
 
 .home .content {
-  opacity: 0;
   text-align: center;
+  display:none;
 }
 
 .content {
@@ -236,7 +236,7 @@ links>a:nth-child(3) {
 #aboutContent {
   margin-top: 4rem;
   text-align: center;
-  opacity: 0;
+  display:none;
 }
 
 #aboutContent p {
@@ -318,6 +318,7 @@ links>a:nth-child(3) {
 #projectsBottomH3{
   width:80%;
   margin: 10px auto;
+  display:none;
 }
 
 .header .logo {
