@@ -463,6 +463,8 @@ letter-spacing: 2px;
   margin-right:60px;
   margin-left:60px;
   display:inline-block;
+  z-index:1;
+  position:relative;
 }
 
 .overlay .links > a:hover{

@@ -17,6 +17,24 @@ let sliderProjects = Array.from(
   nextButton.ontouchstart = nextSlide;
   prevButton.ontouchstart = prevSlide;
   
+     let anchors =  document.getElementsByTagName("a");
+     for(let i = 0; i < anchors.length; i++)
+     {
+         
+         let a = anchors[i];
+         if(!a.href.includes("#"))
+         {
+         a.ontouchstart = redirect(a.href);
+        }
+     }
+
+     function redirect(href)
+     {
+         return function(){
+            window.open(href, "_blank");
+        }
+     }
+            
   //Create The Main UL Element
   let paginationElement = document.createElement("ul");
   
