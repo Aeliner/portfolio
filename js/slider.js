@@ -16,7 +16,7 @@ let sliderProjects = Array.from(
   //Handle Click on Previous and Next Buttons
   nextButton.ontouchstart = nextSlide;
   prevButton.ontouchstart = prevSlide;
-  
+  /*
      let anchors =  document.getElementsByTagName("a");
      for(let i = 0; i < anchors.length; i++)
      {
@@ -34,7 +34,7 @@ let sliderProjects = Array.from(
             window.open(href, "_blank");
         }
      }
-            
+            */
   //Create The Main UL Element
   let paginationElement = document.createElement("ul");
   

@@ -258,11 +258,6 @@
       page.on("scroll.end", (data) => {
         animate(data);
       });
-      page.on("init", (data) => {
-        console.log(data);
-        animate(data);
-      });
-
       function animate(data) {
         let index = data.index;
         if (alreadyAnimated) {
@@ -334,7 +329,6 @@
           //contact
         }
       }
-      window.scrollTo(0, 0);
     </script>
   </body>
 </html>
