@@ -1,334 +1,326 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="css/animate.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/slider.css">
-  </head>
 
-  <body>
-    <header class="header">
-      <div class="logo">Nazareno Alvarez</div>
-      <input class="menu-btn" type="checkbox" id="menu-btn" /><label
-        class="menu-icon"
-        for="menu-btn"
-        ><span class="nav-icon"></span
-      ></label>
-      <ul class="menu" id="#navs">
-        <li class="animate__animated animate__fadeInLeft delay-125">
-          <a href="#page-1">Home</a>
-        </li>
-        <li class="animate__animated animate__fadeInLeft delay-1">
-          <a href="#page-2">About</a>
-        </li>
-        <li class="animate__animated animate__fadeInLeft delay-075">
-          <a href="#page-3">Projects</a>
-        </li>
-        <li class="animate__animated animate__fadeInLeft delay-05">
-          <a href="#page-4">Contact</a>
-        </li>
-        <li class="animate__animated animate__fadeInLeft delay-025">
-          <a href="resume/Resume English.pdf">Resume</a>
-        </li>
-      </ul>
-    </header>
-    <div id="container">
-      <section data-anchor="Page 1">
-        <div class="home">
-          <div id="homeContent" class="content">
-            <h1 id="h1home">
-              Nazareno Alvarez
-            </h1>
-            <h3 id="h3home">
-              FullStack Developer
-            </h3>
-            <links>
-              <a
-                id="link1home"
-                href="https://www.linkedin.com/in/nazareno1907/"
-                target="_blank"
-                class=""
-              ></a>
-              <a
-                id="link2home"
-                href="https://github.com/Aeliner"
-                target="_blank"
-                class=""
-              ></a>
-              <a
-                id="link3home"
-                href="resume/Resume_English.pdf"
-                target="_blank"
-                class=""
-                download
-              ></a>
-            </links>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+ <link rel="stylesheet" href="css/animate.min.css" /> 
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/slider.css" />
+  <link rel="stylesheet" href="css/fullpage.min.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo">Nazareno Alvarez</div>
+    <input class="menu-btn" type="checkbox" id="menu-btn" /><label class="menu-icon" for="menu-btn"><span
+        class="nav-icon"></span></label>
+    <ul class="menu" id="#navs">
+      <li class="animate__animated animate__fadeInLeft delay-125">
+        <a href="#page-1">Home</a>
+      </li>
+      <li class="animate__animated animate__fadeInLeft delay-1">
+        <a href="#page-2">About</a>
+      </li>
+      <li class="animate__animated animate__fadeInLeft delay-075">
+        <a href="#page-3">Projects</a>
+      </li>
+      <li class="animate__animated animate__fadeInLeft delay-05">
+        <a href="#page-4">Contact</a>
+      </li>
+      <li class="animate__animated animate__fadeInLeft delay-025">
+        <a href="resume/Resume English.pdf">Resume</a>
+      </li>
+    </ul>
+  </header>
+  <div id="container">
+    <section class="section">
+      <div class="home">
+        <div id="homeContent" class="content">
+          <h1 id="h1home">Nazareno Alvarez</h1>
+          <h3 id="h3home">FullStack Developer</h3>
+          <links>
+            <a id="link1home" href="https://www.linkedin.com/in/nazareno1907/" target="_blank" class=""></a>
+            <a id="link2home" href="https://github.com/Aeliner" target="_blank" class=""></a>
+            <a id="link3home" href="resume/Resume_English.pdf" target="_blank" class="" download></a>
+          </links>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="about">
+        <div class="content" id="aboutContent">
+          <h3 id="h3About">Hello, my name is Nazareno Alvarez.</h3>
+          <p id="p1About">
+            I'm a FullStack Web Developer who enjoys facing and overcoming new
+            and difficult challenges with great and beautiful code.
+          </p>
+          <p id="p2About">
+            I'm a really proactive person, I love learning about new and
+            creative ways to implement solutions , as well as improving my
+            coding and designing skills.
+          </p>
+          <h3 id="h3About2">The main technologies that I work with are:</h3>
+          <div class="aboutSkills">
+            <img class="imgSkills" data-src="images/java.png" alt="" />
+            <img class="imgSkills" data-src="images/javascript.png" alt="" />
+            <img class="imgSkills" data-src="images/social_style_3_css3-512.png" alt="" />
+            <img class="imgSkills" data-src="images/22-512.png" alt="" />
+            <img class="imgSkills" data-src="images/bootstrap.png" alt="" />
+            <img class="imgSkills" data-src="images/php.png" alt="" />
+            <img class="imgSkills" data-src="images/laravel.png" alt="" />
+            <img class="imgSkills" data-src="images/vuejs.png" alt="" />
+            <img class="imgSkills" data-src="images/nodejs.png" alt="" />
+            <img class="imgSkills" data-src="images/mysql.png" alt="" />
           </div>
         </div>
-      </section>
-      <section data-anchor="Page 2">
-        <div class="about">
-          <div class="content" id="aboutContent">
-            <h3 id="h3About">Hello, my name is Nazareno Alvarez.</h3>
-            <p id="p1About">
-              I'm a FullStack Web Developer who enjoys facing and overcoming new and difficult challenges with great and beautiful code.
-            </p>
-            <p id="p2About">
-              I'm a really proactive person, I love learning about new and creative ways to implement solutions
-              , as well as improving my coding and designing skills.
-            </p>
-            <h3 id="h3About2">
-              The main technologies that I work with are:
-            </h3>
-            <div class="aboutSkills">
-              <img class="imgSkills" src="images/java.png" alt="" />
-              <img class="imgSkills" src="images/javascript.png" alt="" />
-              <img
-                class="imgSkills"
-                src="images/social_style_3_css3-512.png"
-                alt=""
-              />
-              <img class="imgSkills" src="images/22-512.png" alt="" />
-              <img class="imgSkills" src="images/bootstrap.png" alt="" />
-              <img class="imgSkills" src="images/php.png" alt="" />
-              <img class="imgSkills" src="images/laravel.png" alt="" />
-              <img class="imgSkills" src="images/vuejs.png" alt="" />
-              <img class="imgSkills" src="images/nodejs.png" alt="" />
-              <img class="imgSkills" src="images/mysql.png" alt="" />
-            </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="projects">
+        <div class="content" id="projectsContent">
+          <h3 id="h3Projects">Take a look at my latest projects:</h3>
+          <div class="controls">
+            <div id="prev" class="leftArrow animate__animated animate__shakeX animate__delay-2s"></div>
+            <div id="next" class="rightArrow animate__animated animate__shakeX animate__delay-2s"></div>
           </div>
-        </div>
-      </section>
-      <section data-anchor="Page 3">
-        <div class="projects">
-          <div class="content" id="projectsContent">
-            <h3 id="h3Projects">Take a look at my latest projects:</h3>
-            <div class="controls">
-              <div id="prev" class="leftArrow animate__animated animate__shakeX animate__delay-2s">
-              </div>
-              <div id="next" class="rightArrow animate__animated animate__shakeX animate__delay-2s">
-              </div>
-            </div>
-            <div class="slider-container">
-              <div class="project active">
-                <img src="images/firefox_oVTCvETpXG.png" alt="" />
-                <div class="overlay">
-                  <span class="upperText">PlayStation 5 Showcase</span>
-                  <div class="links">
+          <div class="slider-container">
+            <div class="project active">
+              <img data-src="images/firefox_oVTCvETpXG.png" alt="" />
+              <div class="overlay">
+                <span class="upperText">PlayStation 5 Showcase</span>
+                <div class="links">
                   <a href="https://github.com/Aeliner/ps5dummy" target="_blank" class="projectButtonGitHub"></a>
                   <a href="https://aeliner.github.io/ps5dummy/" target="_blank" class="projectButtonPage"></a>
                 </div>
-                  <span class="bottomText">A simple HTML5/CSS3/JS website I developed to showcase the new PS5 and most of it's new features.</span>
-                </div>
+                <span class="bottomText">A simple HTML5/CSS3/JS website I developed to showcase the
+                  new PS5 and most of it's new features.</span>
               </div>
-              <div class="project">
-                <img src="images/firefox_j8IVaMrFW4.png" alt="" />
-                <div class="overlay">
+            </div>
+            <div class="project">
+              <img data-src="images/firefox_j8IVaMrFW4.png" alt="" />
+              <div class="overlay">
                 <span class="upperText">Cinema Booking System</span>
                 <div class="links">
-                <a href="https://github.com/Aeliner/cinemabooking" target="_blank" class="projectButtonGitHub"></a>
-                <a href="https://aeliner.github.io/cinemabooking/listado.html" target="_blank" class="projectButtonPage"></a>
+                  <a href="https://github.com/Aeliner/cinemabooking" target="_blank" class="projectButtonGitHub"></a>
+                  <a href="https://aeliner.github.io/cinemabooking/listado.html" target="_blank"
+                    class="projectButtonPage"></a>
+                </div>
+                <span class="bottomText">A simpler visualization of one of the firsts web
+                  applications that I developed while I was learning web
+                  development for the first time</span>
               </div>
-                <span class="bottomText">A simpler visualization of one of the firsts web applications that I developed while I was learning web development for the first time</span>
-              </div>
-              </div>
-              <div class="project">
-                <img src="images/firefox_piQ9QZsYNb.png" alt="" />
-                <div class="overlay">
-                  <span class="upperText">To-Do List</span>
-                  <div class="links">
+            </div>
+            <div class="project">
+              <img data-src="images/firefox_piQ9QZsYNb.png" alt="" />
+              <div class="overlay">
+                <span class="upperText">To-Do List</span>
+                <div class="links">
                   <a href="https://github.com/Aeliner/to-do" target="_blank" class="projectButtonGitHub"></a>
                   <a href="https://aeliner.github.io/to-do/" target="_blank" class="projectButtonPage"></a>
                 </div>
-                  <span class="bottomText">My first ever HTML/CSS/JS website, a simple To-Do list which storages your tasks using LocalStorage.</span>
-                </div>
+                <span class="bottomText">My first ever HTML/CSS/JS website, a simple To-Do list
+                  which storages your tasks using LocalStorage.</span>
               </div>
-              <div class="project">
-                <img src="images/wpp.png" alt="" />
-                <div class="overlay">
-                  <span class="upperText">Command-Line Whatsapp Imitation</span>
-                  <div class="links">
+            </div>
+            <div class="project">
+              <img data-src="images/wpp.png" alt="" />
+              <div class="overlay">
+                <span class="upperText">Command-Line Whatsapp Imitation</span>
+                <div class="links">
                   <a href="https://github.com/Aeliner/to-do" target="_blank" class="projectButtonGitHub"></a>
                   <a href="https://aeliner.github.io/to-do/" target="_blank" class="projectButtonPage"></a>
                 </div>
-                  <span class="bottomText">An application that simulates most of whatsapp's main features in the command-line.</span>
-                </div>
+                <span class="bottomText">An application that simulates most of whatsapp's main
+                  features in the command-line.</span>
               </div>
-              <div class="project">
-                <img src="images/gym.png" alt="" />
-                <div class="overlay">
-                  <span class="upperText">Command-Line Gym</span>
-                  <div class="links">
+            </div>
+            <div class="project">
+              <img data-src="images/gym.png" alt="" />
+              <div class="overlay">
+                <span class="upperText">Command-Line Gym</span>
+                <div class="links">
                   <a href="https://github.com/Aeliner/to-do" target="_blank" class="projectButtonGitHub"></a>
                   <a href="https://aeliner.github.io/to-do/" target="_blank" class="projectButtonPage"></a>
                 </div>
-                  <span class="bottomText">A simple application that simulates a gym's users management system, letting you add users and signing them up for gym classes.</span>
-                </div>
+                <span class="bottomText">A simple application that simulates a gym's users
+                  management system, letting you add users and signing them up
+                  for gym classes.</span>
               </div>
-              
-       </div>
-       <div class="slider-controls">
-        <span id="indicators" class="paginations">
-        </span>
-    </div>
-            <div class="projectsList">
-              <div class="project">
-                <img src="images/firefox_oVTCvETpXG.png" alt="" />
-                <div class="overlay">
-                  <span class="upperText">PlayStation 5 Showcase</span>
-                  <div class="links">
+            </div>
+          </div>
+          <div class="slider-controls">
+            <span id="indicators" class="paginations"> </span>
+          </div>
+          <div class="projectsList">
+            <div class="project">
+              <img data-src="images/firefox_oVTCvETpXG.png" alt="" />
+              <div class="overlay">
+                <span class="upperText">PlayStation 5 Showcase</span>
+                <div class="links">
                   <a href="https://github.com/Aeliner/ps5dummy" target="_blank" class="projectButtonGitHub"></a>
                   <a href="https://aeliner.github.io/ps5dummy/" target="_blank" class="projectButtonPage"></a>
                 </div>
-                  <span class="bottomText">A simple HTML5/CSS3/JS website I developed to showcase the new PS5 and most of it's new features.</span>
-                </div>
-              </div>
-              <div class="project">
-                <img src="images/firefox_j8IVaMrFW4.png" alt="" />
-                <div class="overlay">
-                <span class="upperText">Cinema Booking System</span>
-                <div class="links">
-                <a href="https://github.com/Aeliner/cinemabooking" target="_blank" class="projectButtonGitHub"></a>
-                <a href="https://aeliner.github.io/cinemabooking/listado.html" target="_blank" class="projectButtonPage"></a>
-              </div>
-                <span class="bottomText">A simpler visualization of one of the firsts web applications that I developed while I was learning web development for the first time</span>
-              </div>
-              </div>
-              <div class="project">
-                <img src="images/firefox_piQ9QZsYNb.png" alt="" />
-                <div class="overlay">
-                  <span class="upperText">To-Do List</span>
-                  <div class="links">
-                  <a href="https://github.com/Aeliner/to-do" target="_blank" class="projectButtonGitHub"></a>
-                  <a href="https://aeliner.github.io/to-do/" target="_blank" class="projectButtonPage"></a>
-                </div>
-                  <span class="bottomText">My first ever HTML/CSS/JS website, a simple To-Do list which storages your tasks using LocalStorage.</span>
-                </div>
-              </div>
-              <div class="project">
-                <img src="images/wpp.png" alt="" />
-                <div class="overlay">
-                  <span class="upperText">Command-Line Whatsapp Imitation</span>
-                  <div class="links">
-                  <a href="https://github.com/Aeliner/to-do" target="_blank" class="projectButtonGitHub"></a>
-                  <a href="https://aeliner.github.io/to-do/" target="_blank" class="projectButtonPage"></a>
-                </div>
-                  <span class="bottomText">An application that simulates most of whatsapp's main features in the command-line.</span>
-                </div>
-              </div>
-              <div class="project">
-                <img src="images/gym.png" alt="" />
-                <div class="overlay">
-                  <span class="upperText">Command-Line Gym</span>
-                  <div class="links">
-                  <a href="https://github.com/Aeliner/to-do" target="_blank" class="projectButtonGitHub"></a>
-                  <a href="https://aeliner.github.io/to-do/" target="_blank" class="projectButtonPage"></a>
-                </div>
-                  <span class="bottomText">A simple application that simulates a gym's users management system, letting you add users and signing them up for gym classes.</span>
-                </div>
+                <span class="bottomText">A simple HTML5/CSS3/JS website I developed to showcase the
+                  new PS5 and most of it's new features.</span>
               </div>
             </div>
-            <h3 id="projectsBottomH3">If you wanna see more of my open-source projects, feel free to go into my github!</h3>
+            <div class="project">
+              <img data-src="images/firefox_j8IVaMrFW4.png" alt="" />
+              <div class="overlay">
+                <span class="upperText">Cinema Booking System</span>
+                <div class="links">
+                  <a href="https://github.com/Aeliner/cinemabooking" target="_blank" class="projectButtonGitHub"></a>
+                  <a href="https://aeliner.github.io/cinemabooking/listado.html" target="_blank"
+                    class="projectButtonPage"></a>
+                </div>
+                <span class="bottomText">A simpler visualization of one of the firsts web
+                  applications that I developed while I was learning web
+                  development for the first time</span>
+              </div>
+            </div>
+            <div class="project">
+              <img data-src="images/firefox_piQ9QZsYNb.png" alt="" />
+              <div class="overlay">
+                <span class="upperText">To-Do List</span>
+                <div class="links">
+                  <a href="https://github.com/Aeliner/to-do" target="_blank" class="projectButtonGitHub"></a>
+                  <a href="https://aeliner.github.io/to-do/" target="_blank" class="projectButtonPage"></a>
+                </div>
+                <span class="bottomText">My first ever HTML/CSS/JS website, a simple To-Do list
+                  which storages your tasks using LocalStorage.</span>
+              </div>
+            </div>
+            <div class="project">
+              <img data-src="images/wpp.png" alt="" />
+              <div class="overlay">
+                <span class="upperText">Command-Line Whatsapp Imitation</span>
+                <div class="links">
+                  <a href="https://github.com/Aeliner/to-do" target="_blank" class="projectButtonGitHub"></a>
+                  <a href="https://aeliner.github.io/to-do/" target="_blank" class="projectButtonPage"></a>
+                </div>
+                <span class="bottomText">An application that simulates most of whatsapp's main
+                  features in the command-line.</span>
+              </div>
+            </div>
+            <div class="project">
+              <img data-src="images/gym.png" alt="" />
+              <div class="overlay">
+                <span class="upperText">Command-Line Gym</span>
+                <div class="links">
+                  <a href="https://github.com/Aeliner/to-do" target="_blank" class="projectButtonGitHub"></a>
+                  <a href="https://aeliner.github.io/to-do/" target="_blank" class="projectButtonPage"></a>
+                </div>
+                <span class="bottomText">A simple application that simulates a gym's users
+                  management system, letting you add users and signing them up
+                  for gym classes.</span>
+              </div>
+            </div>
           </div>
-         
+          <h3 id="projectsBottomH3">
+            If you wanna see more of my open-source projects, feel free to go
+            into my github!
+          </h3>
         </div>
-      </section>
-      <section data-anchor="Page 4">
-        <div class="contact">
-          <div class="content" id="contactContent"></div>
-        </div>
-      </section>
-    </div>
-    <script src="js/script.js"></script>
-    <script src="js/pageable.js"></script>
-    <script src="js/slider.js"></script>
-    <script>
-      const page = new Pageable("#container", {
-        pips: false,
-        animation: 800,
-        swipeThreshold: 50,
-        onInit: function (data) {
-          animate(data);
-        },
-      });
-      var alreadyAnimated = [];
-      page.on("scroll.end", (data) => {
-        animate(data);
-      });
-      function animate(data) {
-        let index = data.index;
-        if (alreadyAnimated) {
-          if (alreadyAnimated.includes(index)) return;
-          else alreadyAnimated.push(index);
-        }
-        if (index == 0) {
-          let content = document.getElementById("homeContent");
-          content.style.display = "block";
-          let h1home = document.getElementById("h1home");
-          let h3home = document.getElementById("h3home");
-          let github = document.getElementById("link2home");
-          let linkedin = document.getElementById("link1home");
-          let resume = document.getElementById("link3home");
-          h1home.classList.add(
-            "animate__animated",
-            "animate__fadeInDown",
-            "animate__delay-1s"
-          );
-          h3home.classList.add("animate__animated", "animate__fadeInUp");
-          github.classList.add(
-            "animate__animated",
-            "animate__fadeIn",
-            "github"
-          );
-          linkedin.classList.add(
-            "animate__animated",
-            "animate__fadeIn",
-            "linkedin"
-          );
-          resume.classList.add(
-            "animate__animated",
-            "animate__fadeIn",
-            "resume"
-          );
-        } else if (index == 1) {
-          let content = document.getElementById("aboutContent");
-          content.style.display = "block";
-          let h3 = document.getElementById("h3About");
-          let h3_2 = document.getElementById("h3About2");
-          h3_2.classList.add(
-            "animate__animated",
-            "animate__fadeIn",
-            "animate__delay-2s"
-          );
-          h3.classList.add("animate__animated", "animate__fadeIn");
-          let p1 = document.getElementById("p1About");
-          let p2 = document.getElementById("p2About");
-          p1.classList.add(
-            "animate__animated",
-            "animate__fadeIn",
-            "animate__delay-1s"
-          );
-          p2.classList.add(
-            "animate__animated",
-            "animate__fadeIn",
-            "animate__delay-1s"
-          );
-          let imgList = document.getElementsByClassName("imgSkills");
-          for (let i = 0; i < imgList.length; i++) {
-            let img = imgList[i];
-            let delay = 2.25 + 0.25 * i;
-            img.classList.add("animate__animated", "animate__fadeInUp");
-            img.style.animationDelay = delay + "s";
-          }
-        } else if (index == 2) {
-          //projects
-        } else {
-          //contact
-        }
+      </div>
+    </section>
+    <section class="section">
+      <div class="contact">
+        <div class="content" id="contactContent"></div>
+      </div>
+    </section>
+  </div>
+  <script src="js/script.js"></script>
+  <script type="text/javascript" src="js/fullpage.min.js"></script>
+  <script src="js/slider.js"></script>
+  <script>
+    new fullpage("#container", {
+      //options here
+      autoScrolling: true,
+      css3: true,
+      anchors: ["home", "about", "projects", "contact"],
+      lazyLoading: true,
+      afterLoad: function(origin, destination, direction){
+        animate(origin, destination, direction);
+      },
+    });
+    var alreadyAnimated = [];
+    function animate(origin, destination, direction) {
+      console.log(origin);
+      console.log(destination);
+      console.log(direction);
+      let index = destination.index;
+      if (alreadyAnimated) {
+        if (alreadyAnimated.includes(index)) return;
+        else alreadyAnimated.push(index);
       }
-    </script>
-  </body>
+      if (index == 0) {
+        let content = document.getElementById("homeContent");
+        content.style.display = "block";
+        let h1home = document.getElementById("h1home");
+        let h3home = document.getElementById("h3home");
+        let github = document.getElementById("link2home");
+        let linkedin = document.getElementById("link1home");
+        let resume = document.getElementById("link3home");
+        h1home.classList.add(
+          "animate__animated",
+          "animate__fadeInDown",
+          "animate__delay-1s"
+        );
+        h3home.classList.add("animate__animated", "animate__fadeInUp", "animate__delay-2s");
+        github.classList.add(
+          "animate__animated",
+          "animate__fadeIn",
+          "github"
+        );
+        linkedin.classList.add(
+          "animate__animated",
+          "animate__fadeIn",
+          "linkedin"
+        );
+        resume.classList.add(
+          "animate__animated",
+          "animate__fadeIn",
+          "resume"
+        );
+      } else if (index == 1) {
+        let content = document.getElementById("aboutContent");
+        content.style.display = "block";
+        let h3 = document.getElementById("h3About");
+        let h3_2 = document.getElementById("h3About2");
+        h3_2.classList.add(
+          "animate__animated",
+          "animate__fadeIn",
+          "animate__delay-2s"
+        );
+        h3.classList.add("animate__animated", "animate__fadeIn");
+        let p1 = document.getElementById("p1About");
+        let p2 = document.getElementById("p2About");
+        p1.classList.add(
+          "animate__animated",
+          "animate__fadeIn",
+          "animate__delay-1s"
+        );
+        p2.classList.add(
+          "animate__animated",
+          "animate__fadeIn",
+          "animate__delay-1s"
+        );
+        let imgList = document.getElementsByClassName("imgSkills");
+        for (let i = 0; i < imgList.length; i++) {
+          let img = imgList[i];
+          let delay = 2.25 + 0.25 * i;
+          img.classList.add("animate__animated", "animate__fadeInUp");
+          img.style.animationDelay = delay + "s";
+        }
+      } else if (index == 2) {
+        //projects
+      } else {
+        //contact
+      }
+    }
+  </script>
+</body>
+
 </html>
