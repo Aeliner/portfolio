@@ -400,11 +400,13 @@ links > a:nth-child(3) {
 .project img {
   width: 100%;
   height: 100%;
+  border-radius: 30px;
 }
 
 #projectsContent {
   text-align: center;
   margin-top: 4rem;
+  display:none;
 }
 
 .project .overlay {
@@ -421,6 +423,7 @@ links > a:nth-child(3) {
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
+  border-radius: 30px;
 }
 
 .project:hover .overlay {
