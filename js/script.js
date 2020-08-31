@@ -7,6 +7,9 @@ new fullpage("#container", {
     afterLoad: function(origin, destination, direction){
       animate(origin, destination, direction);
     },
+    afterResize: function(width, height){
+      fullpage_api.reBuild();
+    }
   });
   var alreadyAnimated = [];
   function animate(origin, destination, direction) {
@@ -17,7 +20,7 @@ new fullpage("#container", {
     }
     if (index == 0) {
       let content = document.getElementById("homeContent");
-      content.style.display = "block";
+      content.style.display = "flex";
       let h1home = document.getElementById("h1home");
       let h3home = document.getElementById("h3home");
       let github = document.getElementById("link2home");
@@ -46,7 +49,7 @@ new fullpage("#container", {
       );
     } else if (index == 1) {
       let content = document.getElementById("aboutContent");
-      content.style.display = "block";
+      content.style.display = "flex";
       let h3 = document.getElementById("h3About");
       let h3_2 = document.getElementById("h3About2");
       h3_2.classList.add(
@@ -76,7 +79,7 @@ new fullpage("#container", {
       }
     } else if (index == 2) {
       let content = document.getElementById("projectsContent");
-      content.style.display = "block";
+      content.style.display = "flex";
       let h3 = document.getElementById("h3Projects");
       h3.classList.add("animate__animated",
       "animate__fadeIn", "delay-05");

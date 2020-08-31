@@ -144,6 +144,16 @@ nav {
   animation-delay: 5s;
 }
 
+.home, .about, .projects, .contact{
+  height:100%;
+  width:100%;
+}
+
+.content{
+  height:100%;
+  width:100%;
+}
+
 .home {
   height: 100%;
   width: 100%;
@@ -158,11 +168,17 @@ nav {
 .home .content {
   text-align: center;
   display: none;
+flex-direction: column;
+justify-content: center;
+align-items: center
 }
 
 .content {
   font-family: playfair_displayregular;
   color: #fff;
+  flex-direction: column;
+justify-content: center;
+align-items: center;
 }
 
 .content h1 {
@@ -216,7 +232,6 @@ links > a:nth-child(3) {
 }
 
 #aboutContent {
-  margin-top: 4rem;
   text-align: center;
   display: none;
 }
@@ -476,7 +491,6 @@ links > a:nth-child(3) {
 
 .contact .content {
   display: flex;
-  justify-content: space-between;
 }
 
 .contact .content h1 {
@@ -489,7 +503,6 @@ form {
   width: 30%;
   flex-direction: column;
   background: rgba(0, 0, 0, 0.2);
-  height: 100%;
   color: #fff;
   margin: 0 auto;
   border-radius: 10px;
@@ -834,6 +847,26 @@ text-align: center;
     width: 90%;
     line-height: 20px;
   }
+
+  .contact .content .infoContainer .linksContainer{
+    margin-top:10px;
+    margin-bottom:10px;
+  }
+
+  .contact .content .infoContainer{
+    margin-bottom:10px;
+  }
+
+  .contact .content .infoContainer .linksContainer > a{
+    width:48px;
+    height:48px;
+  }
+
+  #contactContent{
+    justify-content: normal;
+  }
+
+
 }
 
 
