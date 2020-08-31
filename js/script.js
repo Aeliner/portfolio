@@ -10,9 +10,6 @@ new fullpage("#container", {
   });
   var alreadyAnimated = [];
   function animate(origin, destination, direction) {
-    console.log(origin);
-    console.log(destination);
-    console.log(direction);
     let index = destination.index;
     if (alreadyAnimated) {
       if (alreadyAnimated.includes(index)) return;

@@ -5,14 +5,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio</title>
- <link rel="stylesheet" href="css/animate.min.css" /> 
+  <link rel="stylesheet" href="css/animate.min.css" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/slider.css" />
   <link rel="stylesheet" href="css/fullpage.min.css" />
   <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-<link rel="manifest" href="images/site.webmanifest">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="manifest" href="images/site.webmanifest">
 </head>
 
 <body>
@@ -231,13 +231,96 @@
     </section>
     <section class="section">
       <div class="contact">
-        <div class="content" id="contactContent"></div>
+        <div class="content" id="contactContent">
+          <div class="infoContainer">
+          <h1>If you like what I do and you want to contact me, feel free to fill this form or do it through any of my social media</h1>
+          <div class="linksContainer">
+          <a href="https://www.github.com/Aeliner" target="_blank" class="contactGitHub"></a>
+          <a href="https://www.linkedin.com/in/nazareno1907/" target="_blank" class="contactLinkedIn"></a>
+          <a href="mailto: nazareno.alvarez30@gmail.com" class="contactMail"></a>
+        </div>
+        </div>
+          <form id="my-form" action="https://formspree.io/mgenjnjv" method="POST">
+            <h1>CONTACT</h1>
+            <div class="input">
+              <input type="email" name="email" required>
+              <label>E-mail</label>
+            </div>
+            <div class="input">
+              <input type="text" name="subject" required>
+              <label>Subject</label>
+            </div>
+            <div class="input message">
+              <textarea name="message" id="textareamessage" cols="30" rows="2"></textarea>
+              <label>Message</label>
+            </div>
+            <button id="my-form-button" class="contactButton">Submit</button>
+            <p id="my-form-status"></p>
+          </form>
+        </div>
+        
       </div>
     </section>
   </div>
   <script type="text/javascript" src="js/fullpage.min.js"></script>
-  <script src="js/slider.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/slider.js"></script>
+
+  <script>
+    window.addEventListener("DOMContentLoaded", function () {
+
+      let form = document.getElementById("my-form");
+      let button = document.getElementById("my-form-button");
+      let status = document.getElementById("my-form-status");
+
+      function success() {
+        form.reset();
+        button.style = "display: none ";
+        status.innerHTML = "Thanks for contacting me!";
+        status.style = "display:block";
+      }
+
+      function error() {
+        status.innerHTML = "Oops! There was a problem.";
+        status.style = "display:block";
+      }
+
+      form.addEventListener("submit", function (ev) {
+        ev.preventDefault();
+        let data = new FormData(form);
+        ajax(form.method, form.action, data, success, error);
+      });
+    });
+
+    function ajax(method, url, data, success, error) {
+      let xhr = new XMLHttpRequest();
+      xhr.open(method, url);
+      xhr.setRequestHeader("Accept", "application/json");
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState !== XMLHttpRequest.DONE) return;
+        if (xhr.status === 200) {
+          success(xhr.response, xhr.responseType);
+        } else {
+          error(xhr.status, xhr.response, xhr.responseType);
+        }
+      };
+      xhr.send(data);
+    }
+  </script>
+  <script>
+    window.addEventListener("DOMContentLoaded", function() {
+  const inputs = document.querySelectorAll(
+    'input[type="text"], input[type="password"], input[type="email"], textarea'
+  );
+  inputs.forEach(input => {
+    input.addEventListener("input", function() {
+      !this.value
+        ? this.classList.remove("filled")
+        : this.classList.add("filled");
+    });
+  });
+});
+  </script>
 </body>
 
 </html>
