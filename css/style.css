@@ -609,15 +609,15 @@ form button:hover {
   filter:invert(1);
 }
 .infoContainer .contactGitHub{
-  background-image: url("/images/mark-github.svg");
+  background-image: url("../images/mark-github.svg");
 }
 
 .infoContainer .contactLinkedIn{
-  background-image: url("/images/iconmonstr-linkedin-3.svg");
+  background-image: url("../images/iconmonstr-linkedin-3.svg");
 }
 
 .infoContainer .contactMail{
-  background-image: url("/images/mail.svg");
+  background-image: url("../images/mail.svg");
 }
 
 form p{
