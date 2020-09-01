@@ -644,8 +644,8 @@ form p {
 #contactContent {
   flex-direction: row;
 }
-/*
-@media screen and (max-width:3840px) {
+
+@media screen and (min-width:3840px) {
   .header .logo {
     font-size: 4em;
     padding: 20px 40px;
@@ -759,7 +759,6 @@ form p {
   form p {
     font-size: 60px;
   }
-}
 
 .infoContainer .linksContainer {
   margin-top: 280px;
@@ -770,7 +769,7 @@ form p {
   width: 192px;
 }
 
-} */
+} 
 
 @media screen and (max-width: 1366px) {
   .contact .content h1 {
