@@ -1,16 +1,10 @@
-body,
-h1,
-h2,
-h3,
-html {
+body, h1, h2, h3, html {
   margin: 0;
 }
 
 @font-face {
   font-family: "playfair_displayregular";
-  src: url("fonts/playfairdisplay-variablefont_wght-webfont.woff2")
-      format("woff2"),
-    url("fonts/playfairdisplay-variablefont_wght-webfont.woff") format("woff");
+  src: url("fonts/playfairdisplay-variablefont_wght-webfont.woff2") format("woff2"), url("fonts/playfairdisplay-variablefont_wght-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -144,14 +138,14 @@ nav {
   animation-delay: 5s;
 }
 
-.home, .about, .projects, .contact{
-  height:100%;
-  width:100%;
+.home, .about, .projects, .contact {
+  height: 100%;
+  width: 100%;
 }
 
-.content{
-  height:100%;
-  width:100%;
+.content {
+  height: 100%;
+  width: 100%;
 }
 
 .home {
@@ -168,17 +162,17 @@ nav {
 .home .content {
   text-align: center;
   display: none;
-flex-direction: column;
-justify-content: center;
-align-items: center
+  flex-direction: column;
+  justify-content: center;
+  align-items: center
 }
 
 .content {
   font-family: playfair_displayregular;
   color: #fff;
- flex-direction: column;
-justify-content: center;
-align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .content h1 {
@@ -214,20 +208,19 @@ links .resume {
   background-image: url(../images/curriculum-resume-svgrepo-com.svg);
 }
 
-links > a:hover {
-  filter: invert(60%) sepia(51%) saturate(5031%) hue-rotate(159deg)
-    brightness(92%) contrast(101%);
+links>a:hover {
+  filter: invert(60%) sepia(51%) saturate(5031%) hue-rotate(159deg) brightness(92%) contrast(101%);
 }
 
-links > a:nth-child(1) {
+links>a:nth-child(1) {
   animation-delay: 3.5s;
 }
 
-links > a:nth-child(2) {
+links>a:nth-child(2) {
   animation-delay: 3.75s;
 }
 
-links > a:nth-child(3) {
+links>a:nth-child(3) {
   animation-delay: 4s;
 }
 
@@ -266,7 +259,7 @@ links > a:nth-child(3) {
   margin-bottom: 10px;
 }
 
-.projects .content .controls > div {
+.projects .content .controls>div {
   background-size: cover;
   height: 30px;
   width: 42px;
@@ -304,8 +297,7 @@ links > a:nth-child(3) {
   text-decoration: none;
 }
 
-.header li a:hover,
-.header .menu-btn:hover {
+.header li a:hover, .header .menu-btn:hover {
   background-color: rgba(0, 0, 0, 0.9);
 }
 
@@ -353,8 +345,7 @@ links > a:nth-child(3) {
   width: 18px;
 }
 
-.header .menu-icon .nav-icon:before,
-.header .menu-icon .nav-icon:after {
+.header .menu-icon .nav-icon:before, .header .menu-icon .nav-icon:after {
   background: #fff;
   content: "";
   display: block;
@@ -378,22 +369,21 @@ links > a:nth-child(3) {
   display: none;
 }
 
-.header .menu-btn:checked ~ .menu,
-.header .menu-btn:checked ~ .blur {
+.header .menu-btn:checked~.menu, .header .menu-btn:checked~.blur {
   max-height: 300px;
   max-height: 290px;
 }
 
-.header .menu-btn:checked ~ .menu-icon .nav-icon {
+.header .menu-btn:checked~.menu-icon .nav-icon {
   background: transparent;
 }
 
-.header .menu-btn:checked ~ .menu-icon .nav-icon:before {
+.header .menu-btn:checked~.menu-icon .nav-icon:before {
   transform: rotate(-45deg);
   top: 0;
 }
 
-.header .menu-btn:checked ~ .menu-icon .nav-icon:after {
+.header .menu-btn:checked~.menu-icon .nav-icon:after {
   transform: rotate(45deg);
   top: 0;
 }
@@ -406,12 +396,14 @@ links > a:nth-child(3) {
   width: 100%;
   margin: 0 auto;
 }
+
 .projectsList .project {
   width: 560px;
   height: 315px;
   margin: 15px;
   position: relative;
 }
+
 .project img {
   width: 100%;
   height: 100%;
@@ -421,7 +413,7 @@ links > a:nth-child(3) {
 #projectsContent {
   text-align: center;
   margin-top: 4rem;
-  display:none;
+  display: none;
 }
 
 .project .overlay {
@@ -453,7 +445,7 @@ links > a:nth-child(3) {
   background-image: url("../images/mark-github.svg");
 }
 
-.overlay .links > a {
+.overlay .links>a {
   width: 96px;
   height: 96px;
   background-size: cover;
@@ -465,9 +457,8 @@ links > a:nth-child(3) {
   position: relative;
 }
 
-.overlay .links > a:hover {
-  filter: invert(60%) sepia(51%) saturate(5031%) hue-rotate(159deg)
-    brightness(92%) contrast(101%);
+.overlay .links>a:hover {
+  filter: invert(60%) sepia(51%) saturate(5031%) hue-rotate(159deg) brightness(92%) contrast(101%);
 }
 
 .overlay .upperText {
@@ -511,10 +502,10 @@ form {
   box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 1);
 }
 
-#my-form > h1 {
-  text-align:center;
-  margin:0;
-  color:#00c9c9
+#my-form>h1 {
+  text-align: center;
+  margin: 0;
+  color: #00c9c9
 }
 
 form .input {
@@ -528,22 +519,20 @@ form * {
 form button {
   width: 50%;
   margin: 0 auto;
-  border-radius:50px;
-  background-color:#002d30;
-  font-size:30px;
-  color:#fff;
-  -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 72, 64,1);
--moz-box-shadow: 0px 0px 2px 2px rgba(0, 72, 64,1);
-box-shadow: 0px 0px 2px 2px rgb(0, 72, 64);
-border:none;
-margin: 10px auto 20px auto;
+  border-radius: 50px;
+  background-color: #002d30;
+  font-size: 30px;
+  color: #fff;
+  -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 72, 64, 1);
+  -moz-box-shadow: 0px 0px 2px 2px rgba(0, 72, 64, 1);
+  box-shadow: 0px 0px 2px 2px rgb(0, 72, 64);
+  border: none;
+  margin: 10px auto 20px auto;
 }
 
-
-
 form button:hover {
-  cursor:pointer;
-  background:#47807f;
+  cursor: pointer;
+  background: #47807f;
 }
 
 .input {
@@ -551,10 +540,12 @@ form button:hover {
   position: relative;
   outline: none;
 }
+
 .input label {
   display: block;
   z-index: -1;
 }
+
 .input input:not([type="submit"]):not([type="checkbox"]):not([type="radio"]), .input textarea {
   background-color: transparent;
   padding-left: 17px;
@@ -566,20 +557,15 @@ form button:hover {
   box-shadow: none;
   color: #fff;
   border-bottom: 1px solid #00c9c9;
-  font-size:18px;
+  font-size: 18px;
 }
 
-.input textarea{
+.input textarea {
   resize: none;
   height: 200px;
 }
 
-.input
-  input:not([type="submit"]):not([type="checkbox"]):not([type="radio"]):focus
-  + label,
-.input
-  input:not([type="submit"]):not([type="checkbox"]):not([type="radio"]).filled
-  + label, .input textarea:focus +label, .input textarea.filled + label {
+.input input:not([type="submit"]):not([type="checkbox"]):not([type="radio"]):focus+label, .input input:not([type="submit"]):not([type="checkbox"]):not([type="radio"]).filled+label, .input textarea:focus+label, .input textarea.filled+label {
   font-size: 13px;
   top: -2px;
   left: 14px;
@@ -591,6 +577,7 @@ form button:hover {
   box-shadow: none;
   z-index: 1;
 }
+
 .input label {
   -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
@@ -604,217 +591,190 @@ form button:hover {
   color: #fff;
 }
 
-.message label{
-  top:15%;
+.message label {
+  top: 15%;
 }
 
-.infoContainer{
-  width:50%;
-  display:flex;
-  flex-direction:column;
+.infoContainer {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
   /*! height: ; */
 }
 
-.infoContainer .linksContainer > a{
-  width:96px;
-  height:96px;
-  background-size:cover;
-  filter:invert(1);
+.infoContainer .linksContainer>a {
+  width: 96px;
+  height: 96px;
+  background-size: cover;
+  filter: invert(1);
 }
-.infoContainer .contactGitHub{
+
+.infoContainer .contactGitHub {
   background-image: url("../images/mark-github.svg");
 }
 
-.infoContainer .contactLinkedIn{
+.infoContainer .contactLinkedIn {
   background-image: url("../images/iconmonstr-linkedin-3.svg");
 }
 
-.infoContainer .contactMail{
+.infoContainer .contactMail {
   background-image: url("../images/mail.svg");
 }
 
-form p{
+form p {
   font-size: 30px;
-  display:none;
-color: #00c9c9;
-width: 100%;
-text-align: center;
+  display: none;
+  color: #00c9c9;
+  width: 100%;
+  text-align: center;
 }
 
-.linksContainer{
-  display:flex;
+.linksContainer {
+  display: flex;
   justify-content: space-between;
-  width:80%;
+  width: 80%;
   margin: 0 auto;
 }
 
-.infoContainer .linksContainer > a:hover{
+.infoContainer .linksContainer>a:hover {
   filter: invert(65%) sepia(25%) saturate(6333%) hue-rotate(138deg) brightness(98%) contrast(101%);
 }
 
-#contactContent{
-  flex-direction:row;
+#contactContent {
+  flex-direction: row;
 }
-
-@media screen and (max-width:3840px){
-  .header .logo{
-    font-size:4em;
+/*
+@media screen and (max-width:3840px) {
+  .header .logo {
+    font-size: 4em;
     padding: 20px 40px;
     letter-spacing: 4px;
   }
-  .header .menu >li{
-    font-size:2em;
+  .header .menu>li {
+    font-size: 2em;
   }
-  
-  .header .menu >li a{
+  .header .menu>li a {
     padding: 40px 60px;
   }
-  
-  .home{
-    background-size:cover;
+  .home {
+    background-size: cover;
   }
-  
-  .home h1{
-    font-size:16rem;
+  .home h1 {
+    font-size: 16rem;
   }
-  .home h3{
-    font-size:8em;
+  .home h3 {
+    font-size: 8em;
   }
-  
-  .home links a{
-    height:96px;
-    width:96px;
-    margin:10px;
+  .home links a {
+    height: 96px;
+    width: 96px;
+    margin: 10px;
   }
-  
-  .content h3{
-    font-size:8em;
+  .content h3 {
+    font-size: 8em;
   }
-  
-  #aboutContent p{
+  #aboutContent p {
     font-size: 40px;
-  margin: 20px auto;
-  line-height: 50px;
+    margin: 20px auto;
+    line-height: 50px;
   }
-  
-  .aboutSkills img{
+  .aboutSkills img {
     height: 512px;
-width: 512px;
-margin: 20px;
+    width: 512px;
+    margin: 20px;
   }
-  
-  .projectsList .project{
+  .projectsList .project {
     width: 1120px;
-height: 630px;
-margin: 30px;
+    height: 630px;
+    margin: 30px;
   }
-  
-  .overlay .upperText{
+  .overlay .upperText {
     padding: 20px 20px;
-font-size: 40px;
+    font-size: 40px;
   }
-  
-  .overlay .bottomText{
+  .overlay .bottomText {
     font-size: 36px;
   }
-  
-  .overlay .links > a{
+  .overlay .links>a {
     width: 192px;
-height: 192px;
-margin-right: 120px;
-margin-left: 120px;
+    height: 192px;
+    margin-right: 120px;
+    margin-left: 120px;
   }
-  
-  .contact h1{
-    
-    font-size:8em;
+  .contact h1 {
+    font-size: 8em;
   }
-  
-  .contact .content h1{
+  .contact .content h1 {
     margin: 0 100px 0 100px;
   }
-  
-  
-  form{
+  form {
     border-radius: 20px;
   }
-  
-  form .input{
-    margin:20px;
+  form .input {
+    margin: 20px;
   }
-  
-  form *{
-    padding:10px;
+  form * {
+    padding: 10px;
   }
-  
   .input input:not([type="submit"]):not([type="checkbox"]):not([type="radio"]), .input textarea {
     background-color: transparent;
-padding-left: 34px;
-box-sizing: border-box;
-width: 100%;
-height: 100px;
-color: #fff;
-border-bottom: 2px solid #00c9c9;
-font-size: 36px;
+    padding-left: 34px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100px;
+    color: #fff;
+    border-bottom: 2px solid #00c9c9;
+    font-size: 36px;
   }
-  
-  .input label{
-font-size: 32px;
-position: absolute;
-top: 50%;
-transform: translateY(-50%);
-left: 34px;
-color: #fff;
+  .input label {
+    font-size: 32px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 34px;
+    color: #fff;
   }
-  
-  .input textarea{
-    height:400px;
+  .input textarea {
+    height: 400px;
   }
-  
-  .message label{
-    top:15%;
+  .message label {
+    top: 15%;
   }
-  
-  .input input:not([type="submit"]):not([type="checkbox"]):not([type="radio"]):focus + label, .input input:not([type="submit"]):not([type="checkbox"]):not([type="radio"]).filled + label, .input textarea:focus + label, .input textarea.filled + label{
+  .input input:not([type="submit"]):not([type="checkbox"]):not([type="radio"]):focus+label, .input input:not([type="submit"]):not([type="checkbox"]):not([type="radio"]).filled+label, .input textarea:focus+label, .input textarea.filled+label {
     font-size: 26px;
-top: -4px;
-left: 28px;
-padding: 0 10px;
+    top: -4px;
+    left: 28px;
+    padding: 0 10px;
   }
-  
-  form button{
-margin: 0 auto;
-border-radius: 100px;
-font-size: 60px;
--webkit-box-shadow: 0px 0px 4px 4px rgba(0, 72, 64,1);
--moz-box-shadow: 0px 0px 4px 4px rgba(0, 72, 64,1);
-box-shadow: 0px 0px 4px 4px rgb(0, 72, 64);
-margin: 20px auto 40px auto;
+  form button {
+    margin: 0 auto;
+    border-radius: 100px;
+    font-size: 60px;
+    -webkit-box-shadow: 0px 0px 4px 4px rgba(0, 72, 64, 1);
+    -moz-box-shadow: 0px 0px 4px 4px rgba(0, 72, 64, 1);
+    box-shadow: 0px 0px 4px 4px rgb(0, 72, 64);
+    margin: 20px auto 40px auto;
   }
-  
-  form p{
-        font-size: 60px;
-}
+  form p {
+    font-size: 60px;
   }
-
-.infoContainer .linksContainer{
-  margin-top:280px;
 }
 
-.infoContainer .linksContainer > a {
-  height:192px;
-  width:192px;
+.infoContainer .linksContainer {
+  margin-top: 280px;
 }
 
-
-  
+.infoContainer .linksContainer>a {
+  height: 192px;
+  width: 192px;
 }
+
+} */
 
 @media screen and (max-width: 1366px) {
-
-  .contact .content h1{
-    font-size:3.5rem;
+  .contact .content h1 {
+    font-size: 3.5rem;
   }
   .content h1 {
     font-size: 5rem;
@@ -833,26 +793,20 @@ margin: 20px auto 40px auto;
     width: 192px;
     margin: 5px;
   }
-
   .projectsList .project {
     width: 400px;
     height: 225px;
   }
-
-  .project .overlay .links > a {
+  .project .overlay .links>a {
     width: 48px;
     height: 48px;
   }
-
   .project .overlay span {
     font-size: 16px;
   }
-  
-  .infoContainer > h1:nth-child(1){
-    font-size:16em;
-    
+  .infoContainer>h1:nth-child(1) {
+    font-size: 16em;
   }
-  
 }
 
 @media screen and (max-width: 1280px) {
@@ -867,7 +821,6 @@ margin: 20px auto 40px auto;
     height: 160px;
     width: 160px;
   }
-
   .projectsList .project {
     width: 384px;
     height: 198px;
@@ -878,24 +831,21 @@ margin: 20px auto 40px auto;
   .projectsList .project .overlay {
     height: 100%;
   }
-
-  .contact .content{
-    flex-direction:column-reverse;
+  .contact .content {
+    flex-direction: column-reverse;
   }
-
-  form{
-    width:60%;
+  form {
+    width: 60%;
   }
-
-  .infoContainer{
-    width:95%;
-    margin:30px auto;
+  .infoContainer {
+    width: 95%;
+    margin: 30px auto;
   }
-  .contact .content .infoContainer h1{
-    margin:0;
-    padding:5px;
-    margin-bottom:30px;
-    margin-top:30px;
+  .contact .content .infoContainer h1 {
+    margin: 0;
+    padding: 5px;
+    margin-bottom: 30px;
+    margin-top: 30px;
   }
 }
 
@@ -925,34 +875,31 @@ margin: 20px auto 40px auto;
     font-size: 1em;
     padding: 20px 20px;
   }
-
-  .contact .content h1{
-    font-size:2.5rem;
+  .contact .content h1 {
+    font-size: 2.5rem;
   }
 }
 
-@media (max-width:768px){
-  .contact .content h1{
-    font-size:2rem;
+@media (max-width:768px) {
+  .contact .content h1 {
+    font-size: 2rem;
   }
 }
 
 @media screen and (max-width: 450px) {
-  form{
-    width:95%;
+  form {
+    width: 95%;
   }
-   .infoContainer{
-    margin-top:10px;
+  .infoContainer {
+    margin-top: 10px;
   }
-
-  .contact .content .infoContainer h1{
-    margin-top:0;
-    font-size:1.5rem;
+  .contact .content .infoContainer h1 {
+    margin-top: 0;
+    font-size: 1.5rem;
   }
-
-  .contact .content .infoContainer .linksContainer > a{
-    width:64px;
-    height:64px;
+  .contact .content .infoContainer .linksContainer>a {
+    width: 64px;
+    height: 64px;
   }
   nav .name {
     font-size: 1.5em;
@@ -979,17 +926,15 @@ margin: 20px auto 40px auto;
   }
 }
 
-@media screen and (max-width:400px){
-  .contact .content .infoContainer h1{
-    display:none;
+@media screen and (max-width:400px) {
+  .contact .content .infoContainer h1 {
+    display: none;
   }
-
-  .contact .content .infoContainer .linksContainer{
-    margin-top:20px;
+  .contact .content .infoContainer .linksContainer {
+    margin-top: 20px;
   }
-
-  form .input textarea{
-    height:150px;
+  form .input textarea {
+    height: 150px;
   }
 }
 
@@ -1001,37 +946,27 @@ margin: 20px auto 40px auto;
     height: 64px;
     width: 64px;
   }
-
   .content h3 {
     font-size: 1.25em;
     margin-bottom: 1em;
     margin-top: 1em;
   }
-
   #aboutContent p {
     width: 90%;
     line-height: 20px;
   }
-
-  .contact .content .infoContainer .linksContainer{
-    margin-top:10px;
-    margin-bottom:10px;
+  .contact .content .infoContainer .linksContainer {
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
-
-  .contact .content .infoContainer{
-    margin-bottom:10px;
+  .contact .content .infoContainer {
+    margin-bottom: 10px;
   }
-
-  .contact .content .infoContainer .linksContainer > a{
-    width:48px;
-    height:48px;
+  .contact .content .infoContainer .linksContainer>a {
+    width: 48px;
+    height: 48px;
   }
-
-  #contactContent{
+  #contactContent {
     justify-content: normal;
   }
-
-
 }
-
-
